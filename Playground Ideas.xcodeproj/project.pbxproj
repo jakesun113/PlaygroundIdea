@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */; };
+		1801597E1F4DAADB000A3DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1801597D1F4DAADB000A3DA6 /* Assets.xcassets */; };
+		180159801F4DAF57000A3DA6 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801597F1F4DAF57000A3DA6 /* SwitchViewController.swift */; };
+		180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */; };
+		180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180159831F4DB54E000A3DA6 /* PlansViewController.swift */; };
+		1801598B1F4DB8C6000A3DA6 /* ManualsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801598A1F4DB8C6000A3DA6 /* ManualsViewController.m */; };
 		1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811683A1F4BE65700CB2D05 /* AppDelegate.swift */; };
-		1811683D1F4BE65700CB2D05 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811683C1F4BE65700CB2D05 /* RootViewController.swift */; };
-		1811683F1F4BE65700CB2D05 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811683E1F4BE65700CB2D05 /* DataViewController.swift */; };
-		181168411F4BE65700CB2D05 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181168401F4BE65700CB2D05 /* ModelController.swift */; };
 		181168441F4BE65700CB2D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168421F4BE65700CB2D05 /* Main.storyboard */; };
-		181168461F4BE65700CB2D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181168451F4BE65700CB2D05 /* Assets.xcassets */; };
 		181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */; };
 		181168541F4BE65700CB2D05 /* Playground_IdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */; };
 /* End PBXBuildFile section */
@@ -28,13 +30,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1801597D1F4DAADB000A3DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1801597F1F4DAF57000A3DA6 /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignsViewController.swift; sourceTree = "<group>"; };
+		180159831F4DB54E000A3DA6 /* PlansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
+		180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playground Ideas-Bridging-Header.h"; sourceTree = "<group>"; };
+		180159891F4DB8C6000A3DA6 /* ManualsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualsViewController.h; sourceTree = "<group>"; };
+		1801598A1F4DB8C6000A3DA6 /* ManualsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualsViewController.m; sourceTree = "<group>"; };
 		181168371F4BE65700CB2D05 /* Playground Ideas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playground Ideas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1811683A1F4BE65700CB2D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1811683C1F4BE65700CB2D05 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		1811683E1F4BE65700CB2D05 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		181168401F4BE65700CB2D05 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		181168431F4BE65700CB2D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		181168451F4BE65700CB2D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		181168481F4BE65700CB2D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1811684A1F4BE65700CB2D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1811684F1F4BE65700CB2D05 /* Playground IdeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Playground IdeasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1801598C1F4DBA3B000A3DA6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */,
+				1801597F1F4DAF57000A3DA6 /* SwitchViewController.swift */,
+				180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */,
+				180159831F4DB54E000A3DA6 /* PlansViewController.swift */,
+				180159891F4DB8C6000A3DA6 /* ManualsViewController.h */,
+				1801598A1F4DB8C6000A3DA6 /* ManualsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		1811682E1F4BE65700CB2D05 = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +100,13 @@
 		181168391F4BE65700CB2D05 /* Playground Ideas */ = {
 			isa = PBXGroup;
 			children = (
+				180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */,
 				1811683A1F4BE65700CB2D05 /* AppDelegate.swift */,
-				1811683C1F4BE65700CB2D05 /* RootViewController.swift */,
-				1811683E1F4BE65700CB2D05 /* DataViewController.swift */,
-				181168401F4BE65700CB2D05 /* ModelController.swift */,
 				181168421F4BE65700CB2D05 /* Main.storyboard */,
-				181168451F4BE65700CB2D05 /* Assets.xcassets */,
 				181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */,
+				1801598C1F4DBA3B000A3DA6 /* ViewController */,
 				1811684A1F4BE65700CB2D05 /* Info.plist */,
+				1801597D1F4DAADB000A3DA6 /* Assets.xcassets */,
 			);
 			path = "Playground Ideas";
 			sourceTree = "<group>";
@@ -153,6 +171,7 @@
 					181168361F4BE65700CB2D05 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = KFX623L827;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					1811684E1F4BE65700CB2D05 = {
@@ -188,7 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */,
-				181168461F4BE65700CB2D05 /* Assets.xcassets in Resources */,
+				1801597E1F4DAADB000A3DA6 /* Assets.xcassets in Resources */,
 				181168441F4BE65700CB2D05 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,9 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1811683D1F4BE65700CB2D05 /* RootViewController.swift in Sources */,
-				181168411F4BE65700CB2D05 /* ModelController.swift in Sources */,
-				1811683F1F4BE65700CB2D05 /* DataViewController.swift in Sources */,
+				1801598B1F4DB8C6000A3DA6 /* ManualsViewController.m in Sources */,
+				180159801F4DAF57000A3DA6 /* SwitchViewController.swift in Sources */,
+				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
+				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
+				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,11 +372,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KFX623L827;
 				INFOPLIST_FILE = "Playground Ideas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PlaygroundIdeasQuoll.Playground-Ideas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playground Ideas/Playground Ideas-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -364,11 +388,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KFX623L827;
 				INFOPLIST_FILE = "Playground Ideas/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PlaygroundIdeasQuoll.Playground-Ideas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playground Ideas/Playground Ideas-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -422,6 +448,7 @@
 				1811685A1F4BE65700CB2D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1811685B1F4BE65700CB2D05 /* Build configuration list for PBXNativeTarget "Playground IdeasTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +457,7 @@
 				1811685D1F4BE65700CB2D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
