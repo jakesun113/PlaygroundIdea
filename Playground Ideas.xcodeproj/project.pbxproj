@@ -17,6 +17,7 @@
 		181168441F4BE65700CB2D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168421F4BE65700CB2D05 /* Main.storyboard */; };
 		181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */; };
 		181168541F4BE65700CB2D05 /* Playground_IdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */; };
+		18ED308A1F57E7E200E7E9E7 /* Bulletin+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Bulletin+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground_IdeasTests.swift; sourceTree = "<group>"; };
 		181168551F4BE65700CB2D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1865DF321F4E6B790098B4EC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		18ED30891F57E7E200E7E9E7 /* Bulletin+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bulletin+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				181168421F4BE65700CB2D05 /* Main.storyboard */,
 				181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */,
 				1801598C1F4DBA3B000A3DA6 /* ViewController */,
+				18ED30881F57E79600E7E9E7 /* Extension */,
 				1811684A1F4BE65700CB2D05 /* Info.plist */,
 				1801597D1F4DAADB000A3DA6 /* Assets.xcassets */,
 			);
@@ -120,6 +123,14 @@
 				181168551F4BE65700CB2D05 /* Info.plist */,
 			);
 			path = "Playground IdeasTests";
+			sourceTree = "<group>";
+		};
+		18ED30881F57E79600E7E9E7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18ED30891F57E7E200E7E9E7 /* Bulletin+UIViewController.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
 				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
+				18ED308A1F57E7E200E7E9E7 /* Bulletin+UIViewController.swift in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

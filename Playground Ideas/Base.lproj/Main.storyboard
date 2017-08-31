@@ -63,7 +63,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uuY-m7-k4Q" kind="show" id="3OB-5b-lc8"/>
+                                    <action selector="login:" destination="xJV-kQ-VyW" eventType="touchUpInside" id="AbG-qV-bhi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFn-gI-7YU">
@@ -74,6 +74,24 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDP-Wb-gAw">
+                                <rect key="frame" x="16" y="410" width="115" height="30"/>
+                                <state key="normal" title="Forgot password">
+                                    <color key="titleColor" red="0.84682041409999997" green="0.14212366940000001" blue="0.47555834050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="xJV-kQ-VyW" eventType="touchUpInside" id="H7s-9Z-Q5F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwy-c9-5kP">
+                                <rect key="frame" x="279" y="410" width="80" height="30"/>
+                                <state key="normal" title="View offline">
+                                    <color key="titleColor" red="0.84682041409999997" green="0.14212366940000001" blue="0.47555834050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uuY-m7-k4Q" kind="show" id="0rP-jf-6zX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -83,6 +101,7 @@
                             <constraint firstItem="7WG-ta-h5p" firstAttribute="trailing" secondItem="K2i-ze-xJA" secondAttribute="trailingMargin" id="8IE-gP-fPp"/>
                             <constraint firstItem="HR3-su-dZN" firstAttribute="top" secondItem="Bgt-3F-rjp" secondAttribute="bottom" constant="20" id="F7H-MV-ajf"/>
                             <constraint firstItem="fyG-yu-pdW" firstAttribute="trailing" secondItem="K2i-ze-xJA" secondAttribute="trailingMargin" id="FOK-Dt-VLK"/>
+                            <constraint firstItem="Jwy-c9-5kP" firstAttribute="trailing" secondItem="K2i-ze-xJA" secondAttribute="trailingMargin" id="GKn-iT-55r"/>
                             <constraint firstAttribute="trailing" secondItem="WGa-6E-zxB" secondAttribute="trailing" id="HP1-2D-GrG"/>
                             <constraint firstItem="yFn-gI-7YU" firstAttribute="top" secondItem="fyG-yu-pdW" secondAttribute="bottom" constant="10" id="HyQ-Ve-SkR"/>
                             <constraint firstItem="yFn-gI-7YU" firstAttribute="leading" secondItem="K2i-ze-xJA" secondAttribute="leadingMargin" id="KaJ-Kk-1W2"/>
@@ -94,6 +113,9 @@
                             <constraint firstItem="Bgt-3F-rjp" firstAttribute="leading" secondItem="K2i-ze-xJA" secondAttribute="leadingMargin" id="gFj-10-kFp"/>
                             <constraint firstItem="7WG-ta-h5p" firstAttribute="top" secondItem="Wdl-eb-knf" secondAttribute="bottom" constant="20" id="gdp-jc-DRL"/>
                             <constraint firstItem="Wdl-eb-knf" firstAttribute="trailing" secondItem="K2i-ze-xJA" secondAttribute="trailingMargin" id="hym-gb-Q4G"/>
+                            <constraint firstItem="qDP-Wb-gAw" firstAttribute="leading" secondItem="K2i-ze-xJA" secondAttribute="leadingMargin" id="jmD-b2-bER"/>
+                            <constraint firstItem="qDP-Wb-gAw" firstAttribute="top" secondItem="yFn-gI-7YU" secondAttribute="bottom" constant="25" id="lqm-uF-XLJ"/>
+                            <constraint firstItem="Jwy-c9-5kP" firstAttribute="top" secondItem="yFn-gI-7YU" secondAttribute="bottom" constant="25" id="lxu-lg-9nA"/>
                             <constraint firstItem="WGa-6E-zxB" firstAttribute="leading" secondItem="K2i-ze-xJA" secondAttribute="leading" id="mLR-yE-3Cy"/>
                             <constraint firstItem="HR3-su-dZN" firstAttribute="leading" secondItem="K2i-ze-xJA" secondAttribute="leadingMargin" id="oBM-3z-uwm"/>
                             <constraint firstItem="Bgt-3F-rjp" firstAttribute="top" secondItem="7WG-ta-h5p" secondAttribute="bottom" constant="8" id="orm-9n-17a"/>
@@ -107,6 +129,7 @@
                         <outlet property="LoginButton" destination="fyG-yu-pdW" id="SZr-yR-g5g"/>
                         <outlet property="loginButton" destination="fyG-yu-pdW" id="kbQ-ZM-IYX"/>
                         <outlet property="signupButton" destination="yFn-gI-7YU" id="n19-F1-eyT"/>
+                        <segue destination="uuY-m7-k4Q" kind="show" identifier="LoginSuccessSegue" id="oka-dR-4Yl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKo-qH-2Hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,4 +287,7 @@
         <image name="ManualsIcon" width="512" height="512"/>
         <image name="PlansIcon" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oka-dR-4Yl"/>
+    </inferredMetricsTieBreakers>
 </document>

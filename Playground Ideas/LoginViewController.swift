@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton  : UIButton!
     @IBOutlet weak var signupButton : UIButton!
     
+    @IBOutlet weak var forgotPasswordButton: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,6 +22,7 @@ class LoginViewController: UIViewController {
         
         signupButton.layer.cornerRadius = 5
         signupButton.clipsToBounds      = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +30,19 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - IBActions
+    
+    @IBAction func login(_ sender: Any) {
+        performSegue(withIdentifier: "LoginSuccessSegue", sender: nil)
+    }
+    
+    @IBAction func forgotPassword(_ sender: UIButton) {
+        showBulletinBoard()
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//    }
 
     /*
     // MARK: - Navigation
