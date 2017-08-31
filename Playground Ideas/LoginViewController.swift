@@ -10,18 +10,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var loginButton  : UIButton!
+    @IBOutlet weak var signupButton : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //sad
         // Do any additional setup after loading the view.
-        loginButton.layer.cornerRadius = 5
-        loginButton.clipsToBounds = true
+        loginButton.layer.cornerRadius  = 5
+        loginButton.clipsToBounds       = true
         
         signupButton.layer.cornerRadius = 5
-        signupButton.clipsToBounds = true
+        signupButton.clipsToBounds      = true
     }
 
     override func didReceiveMemoryWarning() {

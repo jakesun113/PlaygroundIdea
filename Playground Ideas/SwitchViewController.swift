@@ -8,86 +8,123 @@
 
 import UIKit
 
-class SwitchViewController: UIViewController {
+class SwitchViewController : UIViewController {
 
-    var designViewController : DesignsViewController?
-    var plansViewController : PlansViewController?
-    var manualsViewController : ManualsViewController?
-    
-    var viewControllerCollections : Array<UIViewController?>?
-    
-    var currentViewController : UIViewController?
+    var designViewController      : DesignsViewController?
+    var plansViewController       : PlansViewController?
+    var manualsViewController     : ManualsViewController?
+    var currentViewController     : UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        viewControllerCollections = []
-        viewControllerCollections?.append(designViewController)
-        viewControllerCollections?.append(plansViewController)
-        viewControllerCollections?.append(manualsViewController)
         
-        self.designViewController = self.storyboard?.instantiateViewController(withIdentifier: "DesignsViewController") as? DesignsViewController;
-        self.view.insertSubview((self.designViewController?.view)!, at: 0);
-        self.currentViewController = self.designViewController;
+        designViewController  = self.storyboard?.instantiateViewController(withIdentifier : "DesignsViewController") as? DesignsViewController;
+        self.view.insertSubview((designViewController?.view)!, at: 0);
+        
+        currentViewController = designViewController;
     }
+    
+    // MARK: - IBActions
+    @IBAction func switchToDesignsView(_ sender: UIBarButtonItem) {
+        switchToView(withIdentifier: "DesignsViewController")
+    }
+    
+    @IBAction func switchToPlansView(_ sender: UIBarButtonItem) {
+        switchToView(withIdentifier: "PlansViewController")
+    }
+
+    @IBAction func switchToManualsView(_ sender: UIBarButtonItem) {
+        switchToView(withIdentifier: "ManualsViewController")
+    }
+    
+    @IBAction func switchToProjectsView(_ sender: UIBarButtonItem) {
+        
+    }
+    //MARK: -
+
+    func switchToView (withIdentifier identifier: String) {
+        var targetViewController : UIViewController?
+        
+        switch identifier {
+        case "DesignsViewController" :
+            targetViewController = designViewController
+        case "PlansViewController"   :
+            targetViewController = plansViewController
+        case "ManualsViewController" :
+            targetViewController = manualsViewController
+        default                      :
+            targetViewController = nil
+        }
+        
+        if (currentViewController   != targetViewController) {
+            if (nil == targetViewController) {
+                targetViewController =  self.storyboard?.instantiateViewController(withIdentifier: identifier);
+            }
+            currentViewController?.view.removeFromSuperview()
+            self.view.insertSubview((targetViewController?.view)!, at: 0);
+            
+            currentViewController = targetViewController;
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        for index in 0...self.viewControllerCollections!.count {
-            if self.viewControllerCollections![index] != self.currentViewController {
-                self.viewControllerCollections![index] = nil
-            }
+        if currentViewController != designViewController {
+            designViewController = nil
+        }
+        if currentViewController != plansViewController {
+            plansViewController = nil
+        }
+        if currentViewController != manualsViewController {
+            manualsViewController = nil
         }
     }
     
-    @IBAction func switchToDesignsView(_ sender: UIBarButtonItem) {
-        if (self.currentViewController != self.designViewController) {
-            if (nil == self.designViewController) {
-                self.designViewController = self.storyboard?.instantiateViewController(withIdentifier: "DesignsViewController") as? DesignsViewController;
-            }
-            self.currentViewController?.view.removeFromSuperview()
-            self.view.insertSubview((self.designViewController?.view)!, at: 0);
-            
-            self.currentViewController = self.designViewController;
-        }
-    }
     
-    @IBAction func switchToPlansView(_ sender: UIBarButtonItem) {
-        if (self.currentViewController != self.plansViewController) {
-            if (nil == self.plansViewController) {
-                self.plansViewController = self.storyboard?.instantiateViewController(withIdentifier: "PlansViewController") as? PlansViewController;
-            }
-            self.currentViewController?.view.removeFromSuperview()
-            self.view.insertSubview((self.plansViewController?.view)!, at: 0);
-            
-            self.currentViewController = self.plansViewController;
-        }
-    }
-
-    @IBAction func switchToManualsView(_ sender: UIBarButtonItem) {
-        if (self.currentViewController != self.manualsViewController) {
-            if (nil == self.manualsViewController) {
-                self.manualsViewController = self.storyboard?.instantiateViewController(withIdentifier: "ManualsViewController") as? ManualsViewController;
-            }
-            self.currentViewController?.view.removeFromSuperview()
-            self.view.insertSubview((self.manualsViewController?.view)!, at: 0);
-            
-            self.currentViewController = self.manualsViewController;
-        }
-    }
     
-    @IBAction func switchToProjectsView(_ sender: UIBarButtonItem) {
-    }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
