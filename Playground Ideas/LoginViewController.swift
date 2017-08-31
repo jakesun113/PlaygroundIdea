@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PlaygroundIdeasAPI
 
 class LoginViewController: UIViewController {
 
@@ -33,6 +34,7 @@ class LoginViewController: UIViewController {
     // MARK: - IBActions
     
     @IBAction func login(_ sender: Any) {
+        PlaygroundIdeas.Authentication.login(username: "tom", password: "123")
         performSegue(withIdentifier: "LoginSuccessSegue", sender: nil)
     }
     
