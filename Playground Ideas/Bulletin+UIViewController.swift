@@ -13,7 +13,9 @@ extension UIViewController {
      present a bulletin board to show more information
      */
     public func showBulletinBoard() {
-        let alert = UIAlertController(title: "Bulletin", message: "We will implement this function soon.", preferredStyle: .alert)
+        let alert = UIAlertController(title          : "Bulletin Board",
+                                      message        : "Under Construction!\nWe will implement this function soon.",
+                                      preferredStyle : .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
