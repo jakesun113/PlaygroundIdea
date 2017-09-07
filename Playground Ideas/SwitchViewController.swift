@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PlaygroundIdeasAPI
 
 class SwitchViewController : UIViewController {
 
@@ -26,24 +27,59 @@ class SwitchViewController : UIViewController {
     }
     
     // MARK: - IBActions
+    /**
+     switch to one of the below views by clicking view switch buttons:
+     [designs view,   plans view, Manuals view, projects view]
+     
+     - parameter sender: the view switch button
+     */
     @IBAction func switchToDesignsView(_ sender: UIBarButtonItem) {
-        switchToView(withIdentifier: "DesignsViewController")
+        switchToViewController(withIdentifier: "DesignsViewController")
     }
     
     @IBAction func switchToPlansView(_ sender: UIBarButtonItem) {
-        switchToView(withIdentifier: "PlansViewController")
+        switchToViewController(withIdentifier: "PlansViewController")
     }
 
     @IBAction func switchToManualsView(_ sender: UIBarButtonItem) {
-        switchToView(withIdentifier: "ManualsViewController")
+        switchToViewController(withIdentifier: "ManualsViewController")
     }
     
     @IBAction func switchToProjectsView(_ sender: UIBarButtonItem) {
         
     }
+    
+    /**
+     logout from the server, and go back to the login view
+     
+     - parameter sender: the logout button
+     */
+    @IBAction func logout(_ sender: Any) {
+        let indicator = UIActivityIndicatorView()
+        showActivity(indicator: indicator, block: true)
+        
+        PlaygroundIdeas.Authentication.logout(finished: {
+            (data, response, error) in
+            
+            DispatchQueue.main.async {
+                let handler = HTTPResponseHandler()
+                handler.handleHTTPResponse(data: data, response: response, error: error, successAction: {
+                    let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
+                    self.present(loginViewController!, animated: true, completion: nil)
+                })
+                self.dismissActivity(indicator: indicator)
+            }
+        })
+    }
+    
     //MARK: -
-
-    func switchToView (withIdentifier identifier: String) {
+    /**
+     switch to one of the below views by passing the view identifiter:
+     [designs view,   plans view, Manuals view, projects view]
+     
+     - parameter identifier: the identifier of the destination view controller
+     */
+    func switchToViewController (withIdentifier identifier: String) {
         var targetViewController : UIViewController?
         
         switch identifier {

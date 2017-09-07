@@ -13,8 +13,11 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginButton  : UIButton!
     @IBOutlet weak var signupButton : UIButton!
-    
     @IBOutlet weak var forgotPasswordButton: UILabel!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -32,10 +35,31 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - IBActions
-    
+    /**
+     login to the server, and switch to the home view
+     
+     - parameter sender: the login button
+     */
     @IBAction func login(_ sender: Any) {
-//        PlaygroundIdeas.Authentication.login(username: "tom", password: "123")
-        performSegue(withIdentifier: "LoginSuccessSegue", sender: nil)
+        let username = usernameTextField.text!
+        let password = passwordTextField.text!
+        
+        if !username.isEmpty, !password.isEmpty {
+            let indicator = UIActivityIndicatorView()
+            showActivity(indicator: indicator, block: true)
+            
+            PlaygroundIdeas.Authentication.login(username: username, password: password, finished: {
+                data, response, error in
+                
+                DispatchQueue.main.async {
+                    let handler = HTTPResponseHandler()
+                    handler.handleHTTPResponse(data: data, response: response, error: error, successAction: {
+                        self.performSegue(withIdentifier: "LoginSuccessSegue", sender: nil)
+                    })
+                    self.dismissActivity(indicator: indicator)
+                }
+            })
+        }
     }
     
     @IBAction func forgotPassword(_ sender: UIButton) {

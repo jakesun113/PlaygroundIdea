@@ -17,6 +17,8 @@
 		181168441F4BE65700CB2D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168421F4BE65700CB2D05 /* Main.storyboard */; };
 		181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */; };
 		181168541F4BE65700CB2D05 /* Playground_IdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */; };
+		182D846F1F6056E300006D0C /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D846E1F6056E300006D0C /* HTTPMethods.swift */; };
+		182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D84731F61606C00006D0C /* HTTPResponseHandler.swift */; };
 		184190EC1F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; };
 		184190F31F58598F0020AFBE /* PlaygroundIdeasAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184190F21F58598F0020AFBE /* PlaygroundIdeasAPITests.swift */; };
 		184190F51F58598F0020AFBE /* PlaygroundIdeasAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 184190E51F58598E0020AFBE /* PlaygroundIdeasAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +26,7 @@
 		184190F91F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		184191041F585A670020AFBE /* PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191031F585A670020AFBE /* PlaygroundIdeas.swift */; };
 		184191061F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */; };
-		18ED308A1F57E7E200E7E9E7 /* Bulletin+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Bulletin+UIViewController.swift */; };
+		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		1811684F1F4BE65700CB2D05 /* Playground IdeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Playground IdeasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground_IdeasTests.swift; sourceTree = "<group>"; };
 		181168551F4BE65700CB2D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182D846E1F6056E300006D0C /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		182D84731F61606C00006D0C /* HTTPResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseHandler.swift; sourceTree = "<group>"; };
 		184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlaygroundIdeasAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184190E51F58598E0020AFBE /* PlaygroundIdeasAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundIdeasAPI.h; sourceTree = "<group>"; };
 		184190E61F58598E0020AFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +102,7 @@
 		184191031F585A670020AFBE /* PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundIdeas.swift; sourceTree = "<group>"; };
 		184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Authentication+PlaygroundIdeas.swift"; sourceTree = "<group>"; };
 		1865DF321F4E6B790098B4EC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
-		18ED30891F57E7E200E7E9E7 /* Bulletin+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bulletin+UIViewController.swift"; sourceTree = "<group>"; };
+		18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +148,6 @@
 				180159831F4DB54E000A3DA6 /* PlansViewController.swift */,
 				180159891F4DB8C6000A3DA6 /* ManualsViewController.h */,
 				1801598A1F4DB8C6000A3DA6 /* ManualsViewController.m */,
-				1865DF321F4E6B790098B4EC /* MyPlayground.playground */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -176,8 +179,9 @@
 			children = (
 				180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */,
 				1811683A1F4BE65700CB2D05 /* AppDelegate.swift */,
-				181168421F4BE65700CB2D05 /* Main.storyboard */,
-				181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */,
+				1865DF321F4E6B790098B4EC /* MyPlayground.playground */,
+				18BDAB341F61756A002FD7F2 /* View */,
+				182D84721F61603600006D0C /* HTTPHandler */,
 				1801598C1F4DBA3B000A3DA6 /* ViewController */,
 				18ED30881F57E79600E7E9E7 /* Extension */,
 				1811684A1F4BE65700CB2D05 /* Info.plist */,
@@ -195,12 +199,21 @@
 			path = "Playground IdeasTests";
 			sourceTree = "<group>";
 		};
+		182D84721F61603600006D0C /* HTTPHandler */ = {
+			isa = PBXGroup;
+			children = (
+				182D84731F61606C00006D0C /* HTTPResponseHandler.swift */,
+			);
+			name = HTTPHandler;
+			sourceTree = "<group>";
+		};
 		184190E41F58598E0020AFBE /* PlaygroundIdeasAPI */ = {
 			isa = PBXGroup;
 			children = (
 				184190E51F58598E0020AFBE /* PlaygroundIdeasAPI.h */,
 				184190E61F58598E0020AFBE /* Info.plist */,
 				184191031F585A670020AFBE /* PlaygroundIdeas.swift */,
+				182D846E1F6056E300006D0C /* HTTPMethods.swift */,
 				184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */,
 			);
 			path = PlaygroundIdeasAPI;
@@ -215,10 +228,19 @@
 			path = PlaygroundIdeasAPITests;
 			sourceTree = "<group>";
 		};
+		18BDAB341F61756A002FD7F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				181168421F4BE65700CB2D05 /* Main.storyboard */,
+				181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		18ED30881F57E79600E7E9E7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				18ED30891F57E7E200E7E9E7 /* Bulletin+UIViewController.swift */,
+				18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -409,10 +431,11 @@
 			files = (
 				1801598B1F4DB8C6000A3DA6 /* ManualsViewController.m in Sources */,
 				180159801F4DAF57000A3DA6 /* SwitchViewController.swift in Sources */,
+				182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */,
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
 				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
-				18ED308A1F57E7E200E7E9E7 /* Bulletin+UIViewController.swift in Sources */,
+				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +454,7 @@
 			files = (
 				184191041F585A670020AFBE /* PlaygroundIdeas.swift in Sources */,
 				184191061F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift in Sources */,
+				182D846F1F6056E300006D0C /* HTTPMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +782,7 @@
 				184190FB1F58598F0020AFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		184191001F58598F0020AFBE /* Build configuration list for PBXNativeTarget "PlaygroundIdeasAPITests" */ = {
 			isa = XCConfigurationList;
@@ -766,6 +791,7 @@
 				184190FD1F58598F0020AFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,9 +14,40 @@ extension PlaygroundIdeas {
             
         }
         
-        static public func login(username: String, password: String) -> Bool {
-            print("Welcome \(username)")
-            return true
+        /**
+         login to the server by using the login API
+         
+         - parameter username: user login name
+         - parameter password: user login password
+         - parameter finished: when login succeeds, this closure will be triggered to handle the API response
+         */
+        static public func login(username: String, password: String,
+                                 finished: @escaping (Data?, URLResponse?, Error?) -> Void) {
+            if let apiURI = PlaygroundIdeas.getAPIURI(api: "login") {
+                let body    = "username=\(username)&password=\(password)"
+                let request = PlaygroundIdeas.makeHTTPURLRequest(method: .POST, url: apiURI, body: body)
+                
+                _ = URLSession.shared.dataTask(with: request) {
+                    (data, response, error) in
+                    finished(data, response, error)
+                }.resume()
+            }
+        }
+        
+        /**
+         logout from the server by using the logout API
+         
+         - parameter finished: when logout succeeds, this closure will be triggered to handle the API response
+         */
+        static public func logout(finished: @escaping (Data?, URLResponse?, Error?) -> Void) {
+            if let apiURI = PlaygroundIdeas.getAPIURI(api: "logout") {
+                let request = PlaygroundIdeas.makeHTTPURLRequest(method: .POST, url: apiURI, body: nil)
+                
+                _ = URLSession.shared.dataTask(with: request) {
+                    (data, response, error) in
+                    finished(data, response, error)
+                }.resume()
+            }
         }
     }
 }
