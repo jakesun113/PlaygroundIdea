@@ -99,7 +99,6 @@
 		184190F41F58598F0020AFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184191031F585A670020AFBE /* PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundIdeas.swift; sourceTree = "<group>"; };
 		184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Authentication+PlaygroundIdeas.swift"; sourceTree = "<group>"; };
-		1865DF321F4E6B790098B4EC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualsViewController.swift; sourceTree = "<group>"; };
 		18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,7 +157,6 @@
 				184190E41F58598E0020AFBE /* PlaygroundIdeasAPI */,
 				184190F11F58598F0020AFBE /* PlaygroundIdeasAPITests */,
 				181168381F4BE65700CB2D05 /* Products */,
-				39F9051D8629DECD6846E552 /* Pods */,
 				A3C16FD36FF233462A37932B /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -179,7 +177,6 @@
 			children = (
 				180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */,
 				1811683A1F4BE65700CB2D05 /* AppDelegate.swift */,
-				1865DF321F4E6B790098B4EC /* MyPlayground.playground */,
 				18BDAB341F61756A002FD7F2 /* View */,
 				182D84721F61603600006D0C /* HTTPHandler */,
 				1801598C1F4DBA3B000A3DA6 /* ViewController */,
@@ -243,13 +240,6 @@
 				18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */,
 			);
 			name = Extension;
-			sourceTree = "<group>";
-		};
-		39F9051D8629DECD6846E552 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		A3C16FD36FF233462A37932B /* Frameworks */ = {
