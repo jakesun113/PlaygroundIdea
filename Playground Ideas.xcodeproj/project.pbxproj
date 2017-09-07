@@ -12,7 +12,6 @@
 		180159801F4DAF57000A3DA6 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801597F1F4DAF57000A3DA6 /* SwitchViewController.swift */; };
 		180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */; };
 		180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180159831F4DB54E000A3DA6 /* PlansViewController.swift */; };
-		1801598B1F4DB8C6000A3DA6 /* ManualsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801598A1F4DB8C6000A3DA6 /* ManualsViewController.m */; };
 		1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811683A1F4BE65700CB2D05 /* AppDelegate.swift */; };
 		181168441F4BE65700CB2D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168421F4BE65700CB2D05 /* Main.storyboard */; };
 		181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */; };
@@ -26,6 +25,7 @@
 		184190F91F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		184191041F585A670020AFBE /* PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191031F585A670020AFBE /* PlaygroundIdeas.swift */; };
 		184191061F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */; };
+		18BDAB361F617A22002FD7F2 /* ManualsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */; };
 		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,8 +81,6 @@
 		180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignsViewController.swift; sourceTree = "<group>"; };
 		180159831F4DB54E000A3DA6 /* PlansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playground Ideas-Bridging-Header.h"; sourceTree = "<group>"; };
-		180159891F4DB8C6000A3DA6 /* ManualsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManualsViewController.h; sourceTree = "<group>"; };
-		1801598A1F4DB8C6000A3DA6 /* ManualsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManualsViewController.m; sourceTree = "<group>"; };
 		181168371F4BE65700CB2D05 /* Playground Ideas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playground Ideas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1811683A1F4BE65700CB2D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181168431F4BE65700CB2D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +100,7 @@
 		184191031F585A670020AFBE /* PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundIdeas.swift; sourceTree = "<group>"; };
 		184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Authentication+PlaygroundIdeas.swift"; sourceTree = "<group>"; };
 		1865DF321F4E6B790098B4EC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualsViewController.swift; sourceTree = "<group>"; };
 		18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+UIViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +110,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				184190F81F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Frameworks */,
-				26C2ECF23827599CF1AE6EF2 /* Pods_Playground_Ideas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +143,9 @@
 			children = (
 				1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */,
 				1801597F1F4DAF57000A3DA6 /* SwitchViewController.swift */,
+				18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */,
 				180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */,
 				180159831F4DB54E000A3DA6 /* PlansViewController.swift */,
-				180159891F4DB8C6000A3DA6 /* ManualsViewController.h */,
-				1801598A1F4DB8C6000A3DA6 /* ManualsViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -251,8 +248,6 @@
 		39F9051D8629DECD6846E552 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E821C7C9214EEF05FB23D0CF /* Pods-Playground Ideas.debug.xcconfig */,
-				A1082FF3B5CDA95881654C4E /* Pods-Playground Ideas.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -260,7 +255,6 @@
 		A3C16FD36FF233462A37932B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC9E51748A5BB7359E40A61D /* Pods_Playground_Ideas.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -508,13 +502,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1801598B1F4DB8C6000A3DA6 /* ManualsViewController.m in Sources */,
 				180159801F4DAF57000A3DA6 /* SwitchViewController.swift in Sources */,
 				182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */,
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
 				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
 				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
+				18BDAB361F617A22002FD7F2 /* ManualsViewController.swift in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,7 +682,6 @@
 		};
 		181168591F4BE65700CB2D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E821C7C9214EEF05FB23D0CF /* Pods-Playground Ideas.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -706,7 +699,6 @@
 		};
 		1811685A1F4BE65700CB2D05 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1082FF3B5CDA95881654C4E /* Pods-Playground Ideas.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
