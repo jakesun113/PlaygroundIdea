@@ -1,19 +1,31 @@
 //
-//  ManualsViewController.swift
+//  CommonNavigationController.swift
 //  Playground Ideas
 //
-//  Created by Apple on 07/09/2017.
+//  Created by Apple on 08/09/2017.
 //  Copyright © 2017 PlaygroundIdeasQuoll. All rights reserved.
 //
 
 import UIKit
 
-class ManualsViewController: UIViewController {
+class CommonNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let menuItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(switchToMenuView))
+        self.navigationItem.rightBarButtonItem = menuItem
+        
+        for viewController in viewControllers {
+            viewController.navigationItem.rightBarButtonItems = self.navigationItem.rightBarButtonItems
+        }
+    }
+
+    func switchToMenuView() {
+        let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController")
+        pushViewController(menuViewController!, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
