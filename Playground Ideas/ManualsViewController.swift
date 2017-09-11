@@ -9,18 +9,54 @@
 import UIKit
 
 class ManualsViewController: UIViewController {
-
+    let onlineIdentifier   = "OnlineManualsViewController"
+    let downloadIdentifier = "DownloadManualsViewController"
+    
+    var onlineManualsViewController   : UIViewController?
+    var downloadManualsViewController : UIViewController?
+    var currentViewController         : UIViewController?
+    
+    @IBOutlet weak var viewsSegmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        viewsSegmentedControl.selectedSegmentIndex = 0
+        viewsSegmentedControl.sendActions(for: .valueChanged)
+    }
+    
+    // MARK: - IBActions
+    /**
+     switch to an other view based on the selected segmented control
+     
+     - parameter sender: the segmented control
+     */
+    @IBAction func switchViews(_ sender: UISegmentedControl) {
+        var targetViewController : UIViewController?
+        var identifier           : String
+        
+        if sender.selectedSegmentIndex == 0 {
+            targetViewController = onlineManualsViewController
+            identifier           = onlineIdentifier
+        } else {
+            targetViewController = downloadManualsViewController
+            identifier           = downloadIdentifier
+        }
+        
+        if (nil == targetViewController) {
+            targetViewController = self.storyboard?.instantiateViewController(withIdentifier: identifier);
+        }
+        currentViewController?.view.removeFromSuperview()
+        self.view.insertSubview((targetViewController?.view)!, at: 0);
+        
+        currentViewController    = targetViewController;
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation

@@ -17,6 +17,8 @@
 		181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */; };
 		181168541F4BE65700CB2D05 /* Playground_IdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */; };
 		181E6ACB1F61A94500C7BFEF /* CommonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */; };
+		18213EF11F64178C0058BD0F /* OnlineManualsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18213EF01F64178C0058BD0F /* OnlineManualsTableViewController.swift */; };
+		18213EF51F6417F20058BD0F /* DownloadManualsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18213EF41F6417F20058BD0F /* DownloadManualsTableViewController.swift */; };
 		182D846F1F6056E300006D0C /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D846E1F6056E300006D0C /* HTTPMethods.swift */; };
 		182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D84731F61606C00006D0C /* HTTPResponseHandler.swift */; };
 		184190EC1F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; };
@@ -92,6 +94,8 @@
 		181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground_IdeasTests.swift; sourceTree = "<group>"; };
 		181168551F4BE65700CB2D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonNavigationController.swift; sourceTree = "<group>"; };
+		18213EF01F64178C0058BD0F /* OnlineManualsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineManualsTableViewController.swift; sourceTree = "<group>"; };
+		18213EF41F6417F20058BD0F /* DownloadManualsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManualsTableViewController.swift; sourceTree = "<group>"; };
 		182D846E1F6056E300006D0C /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		182D84731F61606C00006D0C /* HTTPResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseHandler.swift; sourceTree = "<group>"; };
 		184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlaygroundIdeasAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,9 +151,9 @@
 		1801598C1F4DBA3B000A3DA6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18213EEF1F6417680058BD0F /* Manuals */,
 				1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */,
 				1801597F1F4DAF57000A3DA6 /* SwitchViewController.swift */,
-				18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */,
 				180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */,
 				180159831F4DB54E000A3DA6 /* PlansViewController.swift */,
 				181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */,
@@ -203,6 +207,16 @@
 				181168551F4BE65700CB2D05 /* Info.plist */,
 			);
 			path = "Playground IdeasTests";
+			sourceTree = "<group>";
+		};
+		18213EEF1F6417680058BD0F /* Manuals */ = {
+			isa = PBXGroup;
+			children = (
+				18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */,
+				18213EF01F64178C0058BD0F /* OnlineManualsTableViewController.swift */,
+				18213EF41F6417F20058BD0F /* DownloadManualsTableViewController.swift */,
+			);
+			name = Manuals;
 			sourceTree = "<group>";
 		};
 		182D84721F61603600006D0C /* HTTPHandler */ = {
@@ -511,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18213EF11F64178C0058BD0F /* OnlineManualsTableViewController.swift in Sources */,
 				180159801F4DAF57000A3DA6 /* SwitchViewController.swift in Sources */,
 				182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */,
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
@@ -519,6 +534,7 @@
 				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
 				18BDAB361F617A22002FD7F2 /* ManualsViewController.swift in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
+				18213EF51F6417F20058BD0F /* DownloadManualsTableViewController.swift in Sources */,
 				181E6ACB1F61A94500C7BFEF /* CommonNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
