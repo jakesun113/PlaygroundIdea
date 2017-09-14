@@ -4,5 +4,5 @@ use_frameworks!
 target 'Playground Ideas' do
   pod 'AFNetworking'
   pod 'MBProgressHUD'
-  
+  pod 'SwiftyJSON'
 end

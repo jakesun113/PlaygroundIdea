@@ -8,6 +8,7 @@
 
 import UIKit
 import PlaygroundIdeasAPI
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
@@ -54,6 +55,8 @@ class LoginViewController: UIViewController {
                 DispatchQueue.main.async {
                     let handler = HTTPResponseHandler()
                     handler.handleHTTPResponse(data: data, response: response, error: error, successAction: {
+                        let userCredential = JSON(data: data!)
+                        UserInfo.sharedUserInfo().update(userCredential: userCredential)
                         self.performSegue(withIdentifier: "LoginSuccessSegue", sender: nil)
                     })
                     self.dismissActivity(indicator: indicator)

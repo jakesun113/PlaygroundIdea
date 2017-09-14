@@ -9,7 +9,8 @@
 import Foundation
 
 public class PlaygroundIdeas: NSObject {
-    static let baseAPIDomainURL = "http://localhost/wordpress/wp-json/api/v1/"
+//    static let baseAPIDomainURL = "http://localhost/wordpress/wp-json/api/v1/"
+    static let baseAPIDomainURL = "http://swen90014v-2017plq.cis.unimelb.edu.au/wp-json/api/v1/"
     
     private override init() {
         super.init()

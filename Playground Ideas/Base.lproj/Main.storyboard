@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="4212" y="1161.7691154422789"/>
         </scene>
-        <!--Manuals View Controller-->
+        <!--Handbooks View Controller-->
         <scene sceneID="eED-r5-KTl">
             <objects>
-                <viewController storyboardIdentifier="ManualsViewController" id="5p8-LC-Boz" customClass="ManualsViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HandbooksViewController" id="5p8-LC-Boz" customClass="HandbooksViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jUV-iX-nKi"/>
                         <viewControllerLayoutGuide type="bottom" id="L2q-3S-URt"/>
@@ -239,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="4212" y="-165.06746626686657"/>
         </scene>
-        <!--Online Manuals Table View Controller-->
+        <!--Online Handbooks Table View Controller-->
         <scene sceneID="W0l-s9-RDg">
             <objects>
-                <tableViewController storyboardIdentifier="OnlineManualsViewController" id="wol-sh-Gun" customClass="OnlineManualsTableViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="OnlineHandbooksViewController" id="wol-sh-Gun" customClass="OnlineHandbooksTableViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Y3-qv-Mwy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,10 +267,10 @@
             </objects>
             <point key="canvasLocation" x="4986" y="-165"/>
         </scene>
-        <!--Download Manuals Table View Controller-->
+        <!--Download Handbooks Table View Controller-->
         <scene sceneID="Y8v-uM-C2g">
             <objects>
-                <tableViewController storyboardIdentifier="DownloadManualsViewController" id="i5x-32-tMa" customClass="DownloadManualsTableViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DownloadHandbooksViewController" id="i5x-32-tMa" customClass="DownloadHandbooksTableViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vm6-zf-iCb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,10 +295,10 @@
             </objects>
             <point key="canvasLocation" x="5663" y="-165"/>
         </scene>
-        <!--Switch View Controller-->
+        <!--Logout View Controller-->
         <scene sceneID="pVd-k5-pXR">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="9Tr-Rd-moa" customClass="SwitchViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="9Tr-Rd-moa" customClass="LogoutViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yaX-Bv-8Ow"/>
                         <viewControllerLayoutGuide type="bottom" id="xiZ-F9-uDF"/>
@@ -314,7 +314,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logout:" destination="9Tr-Rd-moa" eventType="touchUpInside" id="6yI-T6-3jJ"/>
+                                    <action selector="logout:" destination="9Tr-Rd-moa" eventType="touchUpInside" id="Eck-mk-xvZ"/>
                                 </connections>
                             </button>
                         </subviews>

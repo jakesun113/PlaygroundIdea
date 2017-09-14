@@ -1,5 +1,5 @@
 //
-//  DownloadManualsTableViewController.swift
+//  DownloadHandbooksTableViewController.swift
 //  Playground Ideas
 //
 //  Created by Apple on 09/09/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DownloadManualsTableViewController: UITableViewController {
+class DownloadHandbooksTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
