@@ -30,6 +30,8 @@
 		18BDAB361F617A22002FD7F2 /* ManualsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */; };
 		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 		1B7362B79A906898D571CE98 /* Pods_Playground_Ideas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */; };
+		FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */; };
+		FD508A6A1F691625002D4518 /* DesignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD508A691F691625002D4518 /* DesignTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,10 @@
 		195D59B8FF11DAFC0E726CC4 /* Pods-Playground Ideas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.release.xcconfig"; sourceTree = "<group>"; };
 		1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground_Ideas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB476B47FCB47F787264D1E /* Pods-Playground Ideas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.debug.xcconfig"; sourceTree = "<group>"; };
+		FD00D0C21F6A905B00DD9BE7 /* DesignDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignDetailViewController.h; sourceTree = "<group>"; };
+		FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignDetailViewController.m; sourceTree = "<group>"; };
+		FD508A681F691625002D4518 /* DesignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignTableViewCell.h; sourceTree = "<group>"; };
+		FD508A691F691625002D4518 /* DesignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +155,9 @@
 		1801598C1F4DBA3B000A3DA6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FD508A671F6900A0002D4518 /* Design */,
 				18213EEF1F6417680058BD0F /* Manuals */,
 				1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */,
-				180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */,
 				180159831F4DB54E000A3DA6 /* PlansViewController.swift */,
 				181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */,
 			);
@@ -277,6 +283,18 @@
 				1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD508A671F6900A0002D4518 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */,
+				FD508A681F691625002D4518 /* DesignTableViewCell.h */,
+				FD508A691F691625002D4518 /* DesignTableViewCell.m */,
+				FD00D0C21F6A905B00DD9BE7 /* DesignDetailViewController.h */,
+				FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */,
+			);
+			name = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,7 +515,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AECCEF734EDF574343F05BFF /* [CP] Copy Pods Resources */ = {
@@ -532,6 +550,8 @@
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
 				18213EF51F6417F20058BD0F /* DownloadManualsTableViewController.swift in Sources */,
 				181E6ACB1F61A94500C7BFEF /* CommonNavigationController.swift in Sources */,
+				FD508A6A1F691625002D4518 /* DesignTableViewCell.m in Sources */,
+				FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
