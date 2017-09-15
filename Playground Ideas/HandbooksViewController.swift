@@ -1,5 +1,5 @@
 //
-//  ManualsViewController.swift
+//  HandbooksViewController.swift
 //  Playground Ideas
 //
 //  Created by Apple on 07/09/2017.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ManualsViewController: UIViewController {
-    let onlineIdentifier   = "OnlineManualsViewController"
-    let downloadIdentifier = "DownloadManualsViewController"
+class HandbooksViewController: UIViewController {
+    let onlineIdentifier   = "OnlineHandbooksViewController"
+    let downloadIdentifier = "DownloadHandbooksViewController"
     
-    var onlineManualsViewController   : UIViewController?
-    var downloadManualsViewController : UIViewController?
-    var currentViewController         : UIViewController?
+    var onlineHandbooksViewController   : UITableViewController?
+    var downloadHandbooksViewController : UITableViewController?
+    var currentViewController         : UITableViewController?
     
     @IBOutlet weak var viewsSegmentedControl: UISegmentedControl!
     override func viewDidLoad() {
@@ -32,19 +32,19 @@ class ManualsViewController: UIViewController {
      - parameter sender: the segmented control
      */
     @IBAction func switchViews(_ sender: UISegmentedControl) {
-        var targetViewController : UIViewController?
+        var targetViewController : UITableViewController?
         var identifier           : String
         
         if sender.selectedSegmentIndex == 0 {
-            targetViewController = onlineManualsViewController
+            targetViewController = onlineHandbooksViewController
             identifier           = onlineIdentifier
         } else {
-            targetViewController = downloadManualsViewController
+            targetViewController = downloadHandbooksViewController
             identifier           = downloadIdentifier
         }
         
         if (nil == targetViewController) {
-            targetViewController = self.storyboard?.instantiateViewController(withIdentifier: identifier);
+            targetViewController = self.storyboard?.instantiateViewController(withIdentifier: identifier) as? UITableViewController;
         }
         currentViewController?.view.removeFromSuperview()
         self.view.insertSubview((targetViewController?.view)!, at: 0);

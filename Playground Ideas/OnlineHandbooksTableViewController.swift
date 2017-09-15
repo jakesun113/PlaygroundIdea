@@ -1,5 +1,5 @@
 //
-//  OnlineManualsTableViewController.swift
+//  OnlineHandbooksTableViewController.swift
 //  Playground Ideas
 //
 //  Created by Apple on 09/09/2017.
@@ -8,16 +8,22 @@
 
 import UIKit
 
-class OnlineManualsTableViewController: UITableViewController {
+class OnlineHandbooksTableViewController: UITableViewController {
 
+    let kCloseCellHeight: CGFloat = 50
+    let kOpenCellHeight: CGFloat = 300
+    let kRowsCount = 10
+    var cellHeights: [CGFloat] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        setup()
+    }
+    
+    private func setup() {
+        cellHeights = Array(repeating: kCloseCellHeight, count: kRowsCount)
+        tableView.estimatedRowHeight = kCloseCellHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,17 +32,6 @@ class OnlineManualsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

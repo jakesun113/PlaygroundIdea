@@ -14,20 +14,19 @@
 		1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811683A1F4BE65700CB2D05 /* AppDelegate.swift */; };
 		181168441F4BE65700CB2D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168421F4BE65700CB2D05 /* Main.storyboard */; };
 		181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168471F4BE65700CB2D05 /* LaunchScreen.storyboard */; };
-		181168541F4BE65700CB2D05 /* Playground_IdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */; };
+		18119A2D1F6AB65600C0D395 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119A2C1F6AB65600C0D395 /* UserInfo.swift */; };
+		18119A311F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119A2E1F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift */; };
+		18119A321F6AB74D00C0D395 /* HandbooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119A2F1F6AB74D00C0D395 /* HandbooksViewController.swift */; };
+		18119A331F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119A301F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift */; };
+		18119A351F6AB7FD00C0D395 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119A341F6AB7FD00C0D395 /* LogoutViewController.swift */; };
 		181E6ACB1F61A94500C7BFEF /* CommonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */; };
-		18213EF11F64178C0058BD0F /* OnlineManualsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18213EF01F64178C0058BD0F /* OnlineManualsTableViewController.swift */; };
-		18213EF51F6417F20058BD0F /* DownloadManualsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18213EF41F6417F20058BD0F /* DownloadManualsTableViewController.swift */; };
 		182D846F1F6056E300006D0C /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D846E1F6056E300006D0C /* HTTPMethods.swift */; };
 		182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D84731F61606C00006D0C /* HTTPResponseHandler.swift */; };
-		184190EC1F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; };
-		184190F31F58598F0020AFBE /* PlaygroundIdeasAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184190F21F58598F0020AFBE /* PlaygroundIdeasAPITests.swift */; };
 		184190F51F58598F0020AFBE /* PlaygroundIdeasAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 184190E51F58598E0020AFBE /* PlaygroundIdeasAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		184190F81F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; };
 		184190F91F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		184191041F585A670020AFBE /* PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191031F585A670020AFBE /* PlaygroundIdeas.swift */; };
 		184191061F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */; };
-		18BDAB361F617A22002FD7F2 /* ManualsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */; };
 		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 		1B7362B79A906898D571CE98 /* Pods_Playground_Ideas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */; };
 		FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */; };
@@ -35,27 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		181168501F4BE65700CB2D05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1811682F1F4BE65700CB2D05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 181168361F4BE65700CB2D05;
-			remoteInfo = "Playground Ideas";
-		};
-		184190ED1F58598F0020AFBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1811682F1F4BE65700CB2D05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 184190E21F58598E0020AFBE;
-			remoteInfo = PlaygroundIdeasAPI;
-		};
-		184190EF1F58598F0020AFBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1811682F1F4BE65700CB2D05 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 181168361F4BE65700CB2D05;
-			remoteInfo = "Playground Ideas";
-		};
 		184190F61F58598F0020AFBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1811682F1F4BE65700CB2D05 /* Project object */;
@@ -90,23 +68,19 @@
 		181168431F4BE65700CB2D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181168481F4BE65700CB2D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1811684A1F4BE65700CB2D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1811684F1F4BE65700CB2D05 /* Playground IdeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Playground IdeasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground_IdeasTests.swift; sourceTree = "<group>"; };
-		181168551F4BE65700CB2D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18119A2C1F6AB65600C0D395 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		18119A2E1F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadHandbooksTableViewController.swift; sourceTree = "<group>"; };
+		18119A2F1F6AB74D00C0D395 /* HandbooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandbooksViewController.swift; sourceTree = "<group>"; };
+		18119A301F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineHandbooksTableViewController.swift; sourceTree = "<group>"; };
+		18119A341F6AB7FD00C0D395 /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonNavigationController.swift; sourceTree = "<group>"; };
-		18213EF01F64178C0058BD0F /* OnlineManualsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineManualsTableViewController.swift; sourceTree = "<group>"; };
-		18213EF41F6417F20058BD0F /* DownloadManualsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManualsTableViewController.swift; sourceTree = "<group>"; };
 		182D846E1F6056E300006D0C /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		182D84731F61606C00006D0C /* HTTPResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseHandler.swift; sourceTree = "<group>"; };
 		184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlaygroundIdeasAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		184190E51F58598E0020AFBE /* PlaygroundIdeasAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaygroundIdeasAPI.h; sourceTree = "<group>"; };
 		184190E61F58598E0020AFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		184190EB1F58598E0020AFBE /* PlaygroundIdeasAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaygroundIdeasAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		184190F21F58598F0020AFBE /* PlaygroundIdeasAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundIdeasAPITests.swift; sourceTree = "<group>"; };
-		184190F41F58598F0020AFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184191031F585A670020AFBE /* PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundIdeas.swift; sourceTree = "<group>"; };
 		184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Authentication+PlaygroundIdeas.swift"; sourceTree = "<group>"; };
-		18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualsViewController.swift; sourceTree = "<group>"; };
 		18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+UIViewController.swift"; sourceTree = "<group>"; };
 		195D59B8FF11DAFC0E726CC4 /* Pods-Playground Ideas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.release.xcconfig"; sourceTree = "<group>"; };
 		1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground_Ideas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,25 +101,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1811684C1F4BE65700CB2D05 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		184190DF1F58598E0020AFBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		184190E81F58598E0020AFBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				184190EC1F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,8 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				FD508A671F6900A0002D4518 /* Design */,
-				18213EEF1F6417680058BD0F /* Manuals */,
+				18213EEF1F6417680058BD0F /* Handbook */,
 				1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */,
+				18119A341F6AB7FD00C0D395 /* LogoutViewController.swift */,
 				180159831F4DB54E000A3DA6 /* PlansViewController.swift */,
 				181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */,
 			);
@@ -168,9 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				181168391F4BE65700CB2D05 /* Playground Ideas */,
-				181168521F4BE65700CB2D05 /* Playground IdeasTests */,
 				184190E41F58598E0020AFBE /* PlaygroundIdeasAPI */,
-				184190F11F58598F0020AFBE /* PlaygroundIdeasAPITests */,
 				181168381F4BE65700CB2D05 /* Products */,
 				A3C16FD36FF233462A37932B /* Frameworks */,
 				9F75915EF0B1CD5DD15F54A5 /* Pods */,
@@ -181,9 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				181168371F4BE65700CB2D05 /* Playground Ideas.app */,
-				1811684F1F4BE65700CB2D05 /* Playground IdeasTests.xctest */,
 				184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */,
-				184190EB1F58598E0020AFBE /* PlaygroundIdeasAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +149,7 @@
 			children = (
 				180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */,
 				1811683A1F4BE65700CB2D05 /* AppDelegate.swift */,
+				18119A2B1F6AB63700C0D395 /* Model */,
 				18BDAB341F61756A002FD7F2 /* View */,
 				182D84721F61603600006D0C /* HTTPHandler */,
 				1801598C1F4DBA3B000A3DA6 /* ViewController */,
@@ -203,23 +160,22 @@
 			path = "Playground Ideas";
 			sourceTree = "<group>";
 		};
-		181168521F4BE65700CB2D05 /* Playground IdeasTests */ = {
+		18119A2B1F6AB63700C0D395 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				181168531F4BE65700CB2D05 /* Playground_IdeasTests.swift */,
-				181168551F4BE65700CB2D05 /* Info.plist */,
+				18119A2C1F6AB65600C0D395 /* UserInfo.swift */,
 			);
-			path = "Playground IdeasTests";
+			name = Model;
 			sourceTree = "<group>";
 		};
-		18213EEF1F6417680058BD0F /* Manuals */ = {
+		18213EEF1F6417680058BD0F /* Handbook */ = {
 			isa = PBXGroup;
 			children = (
-				18BDAB351F617A22002FD7F2 /* ManualsViewController.swift */,
-				18213EF01F64178C0058BD0F /* OnlineManualsTableViewController.swift */,
-				18213EF41F6417F20058BD0F /* DownloadManualsTableViewController.swift */,
+				18119A2F1F6AB74D00C0D395 /* HandbooksViewController.swift */,
+				18119A301F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift */,
+				18119A2E1F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift */,
 			);
-			name = Manuals;
+			name = Handbook;
 			sourceTree = "<group>";
 		};
 		182D84721F61603600006D0C /* HTTPHandler */ = {
@@ -240,15 +196,6 @@
 				184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */,
 			);
 			path = PlaygroundIdeasAPI;
-			sourceTree = "<group>";
-		};
-		184190F11F58598F0020AFBE /* PlaygroundIdeasAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				184190F21F58598F0020AFBE /* PlaygroundIdeasAPITests.swift */,
-				184190F41F58598F0020AFBE /* Info.plist */,
-			);
-			path = PlaygroundIdeasAPITests;
 			sourceTree = "<group>";
 		};
 		18BDAB341F61756A002FD7F2 /* View */ = {
@@ -333,24 +280,6 @@
 			productReference = 181168371F4BE65700CB2D05 /* Playground Ideas.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1811684E1F4BE65700CB2D05 /* Playground IdeasTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1811685B1F4BE65700CB2D05 /* Build configuration list for PBXNativeTarget "Playground IdeasTests" */;
-			buildPhases = (
-				1811684B1F4BE65700CB2D05 /* Sources */,
-				1811684C1F4BE65700CB2D05 /* Frameworks */,
-				1811684D1F4BE65700CB2D05 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				181168511F4BE65700CB2D05 /* PBXTargetDependency */,
-			);
-			name = "Playground IdeasTests";
-			productName = "Playground IdeasTests";
-			productReference = 1811684F1F4BE65700CB2D05 /* Playground IdeasTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		184190E21F58598E0020AFBE /* PlaygroundIdeasAPI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184190FE1F58598F0020AFBE /* Build configuration list for PBXNativeTarget "PlaygroundIdeasAPI" */;
@@ -369,25 +298,6 @@
 			productReference = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		184190EA1F58598E0020AFBE /* PlaygroundIdeasAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 184191001F58598F0020AFBE /* Build configuration list for PBXNativeTarget "PlaygroundIdeasAPITests" */;
-			buildPhases = (
-				184190E71F58598E0020AFBE /* Sources */,
-				184190E81F58598E0020AFBE /* Frameworks */,
-				184190E91F58598E0020AFBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				184190EE1F58598F0020AFBE /* PBXTargetDependency */,
-				184190F01F58598F0020AFBE /* PBXTargetDependency */,
-			);
-			name = PlaygroundIdeasAPITests;
-			productName = PlaygroundIdeasAPITests;
-			productReference = 184190EB1F58598E0020AFBE /* PlaygroundIdeasAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -404,23 +314,11 @@
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
-					1811684E1F4BE65700CB2D05 = {
-						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = KFX623L827;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 181168361F4BE65700CB2D05;
-					};
 					184190E21F58598E0020AFBE = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = KFX623L827;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
-					};
-					184190EA1F58598E0020AFBE = {
-						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = KFX623L827;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 181168361F4BE65700CB2D05;
 					};
 				};
 			};
@@ -438,9 +336,7 @@
 			projectRoot = "";
 			targets = (
 				181168361F4BE65700CB2D05 /* Playground Ideas */,
-				1811684E1F4BE65700CB2D05 /* Playground IdeasTests */,
 				184190E21F58598E0020AFBE /* PlaygroundIdeasAPI */,
-				184190EA1F58598E0020AFBE /* PlaygroundIdeasAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -456,21 +352,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1811684D1F4BE65700CB2D05 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		184190E11F58598E0020AFBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		184190E91F58598E0020AFBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -489,11 +371,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -540,26 +424,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18213EF11F64178C0058BD0F /* OnlineManualsTableViewController.swift in Sources */,
+				18119A321F6AB74D00C0D395 /* HandbooksViewController.swift in Sources */,
 				182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */,
+				18119A331F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift in Sources */,
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
 				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
 				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
-				18BDAB361F617A22002FD7F2 /* ManualsViewController.swift in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
-				18213EF51F6417F20058BD0F /* DownloadManualsTableViewController.swift in Sources */,
+				18119A2D1F6AB65600C0D395 /* UserInfo.swift in Sources */,
+				18119A311F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift in Sources */,
+				18119A351F6AB7FD00C0D395 /* LogoutViewController.swift in Sources */,
 				181E6ACB1F61A94500C7BFEF /* CommonNavigationController.swift in Sources */,
 				FD508A6A1F691625002D4518 /* DesignTableViewCell.m in Sources */,
 				FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1811684B1F4BE65700CB2D05 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				181168541F4BE65700CB2D05 /* Playground_IdeasTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,32 +451,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		184190E71F58598E0020AFBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				184190F31F58598F0020AFBE /* PlaygroundIdeasAPITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		181168511F4BE65700CB2D05 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 181168361F4BE65700CB2D05 /* Playground Ideas */;
-			targetProxy = 181168501F4BE65700CB2D05 /* PBXContainerItemProxy */;
-		};
-		184190EE1F58598F0020AFBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 184190E21F58598E0020AFBE /* PlaygroundIdeasAPI */;
-			targetProxy = 184190ED1F58598F0020AFBE /* PBXContainerItemProxy */;
-		};
-		184190F01F58598F0020AFBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 181168361F4BE65700CB2D05 /* Playground Ideas */;
-			targetProxy = 184190EF1F58598F0020AFBE /* PBXContainerItemProxy */;
-		};
 		184190F71F58598F0020AFBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 184190E21F58598E0020AFBE /* PlaygroundIdeasAPI */;
@@ -759,36 +614,6 @@
 			};
 			name = Release;
 		};
-		1811685C1F4BE65700CB2D05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = KFX623L827;
-				INFOPLIST_FILE = "Playground IdeasTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.PlaygroundIdeasQuoll.Playground-IdeasTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playground Ideas.app/Playground Ideas";
-			};
-			name = Debug;
-		};
-		1811685D1F4BE65700CB2D05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = KFX623L827;
-				INFOPLIST_FILE = "Playground IdeasTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.PlaygroundIdeasQuoll.Playground-IdeasTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playground Ideas.app/Playground Ideas";
-			};
-			name = Release;
-		};
 		184190FA1F58598F0020AFBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -838,34 +663,6 @@
 			};
 			name = Release;
 		};
-		184190FC1F58598F0020AFBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = KFX623L827;
-				INFOPLIST_FILE = PlaygroundIdeasAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PlaygroundIdeasQuoll.PlaygroundIdeasAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playground Ideas.app/Playground Ideas";
-			};
-			name = Debug;
-		};
-		184190FD1F58598F0020AFBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = KFX623L827;
-				INFOPLIST_FILE = PlaygroundIdeasAPITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PlaygroundIdeasQuoll.PlaygroundIdeasAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playground Ideas.app/Playground Ideas";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -887,29 +684,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1811685B1F4BE65700CB2D05 /* Build configuration list for PBXNativeTarget "Playground IdeasTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1811685C1F4BE65700CB2D05 /* Debug */,
-				1811685D1F4BE65700CB2D05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		184190FE1F58598F0020AFBE /* Build configuration list for PBXNativeTarget "PlaygroundIdeasAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				184190FA1F58598F0020AFBE /* Debug */,
 				184190FB1F58598F0020AFBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		184191001F58598F0020AFBE /* Build configuration list for PBXNativeTarget "PlaygroundIdeasAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				184190FC1F58598F0020AFBE /* Debug */,
-				184190FD1F58598F0020AFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
