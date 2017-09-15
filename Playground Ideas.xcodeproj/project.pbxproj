@@ -29,6 +29,8 @@
 		184191061F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */; };
 		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 		1B7362B79A906898D571CE98 /* Pods_Playground_Ideas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */; };
+		D9135F7B1F6BDA6800258AC7 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9135F791F6BDA6800258AC7 /* RegisterAccountViewController.swift */; };
+		D9135F7C1F6BDA6800258AC7 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9135F7A1F6BDA6800258AC7 /* UserSettingViewController.swift */; };
 		FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */; };
 		FD508A6A1F691625002D4518 /* DesignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD508A691F691625002D4518 /* DesignTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -85,6 +87,8 @@
 		195D59B8FF11DAFC0E726CC4 /* Pods-Playground Ideas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.release.xcconfig"; sourceTree = "<group>"; };
 		1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground_Ideas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB476B47FCB47F787264D1E /* Pods-Playground Ideas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.debug.xcconfig"; sourceTree = "<group>"; };
+		D9135F791F6BDA6800258AC7 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
+		D9135F7A1F6BDA6800258AC7 /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		FD00D0C21F6A905B00DD9BE7 /* DesignDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignDetailViewController.h; sourceTree = "<group>"; };
 		FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignDetailViewController.m; sourceTree = "<group>"; };
 		FD508A681F691625002D4518 /* DesignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignTableViewCell.h; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 		1801598C1F4DBA3B000A3DA6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D9135F791F6BDA6800258AC7 /* RegisterAccountViewController.swift */,
+				D9135F7A1F6BDA6800258AC7 /* UserSettingViewController.swift */,
 				FD508A671F6900A0002D4518 /* Design */,
 				18213EEF1F6417680058BD0F /* Handbook */,
 				1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */,
@@ -429,6 +435,8 @@
 				18119A331F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift in Sources */,
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
 				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
+				D9135F7B1F6BDA6800258AC7 /* RegisterAccountViewController.swift in Sources */,
+				D9135F7C1F6BDA6800258AC7 /* UserSettingViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
 				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
