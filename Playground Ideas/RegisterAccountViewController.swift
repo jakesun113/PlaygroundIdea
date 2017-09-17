@@ -1,17 +1,18 @@
 //
-//  DesignsViewController.swift
+//  RegisterAccountViewController.swift
 //  Playground Ideas
 //
-//  Created by Apple on 23/08/2017.
+//  Created by Khanh Tan Nguyen on 14/9/17.
 //  Copyright © 2017 PlaygroundIdeasQuoll. All rights reserved.
 //
 
 import UIKit
 
-class DesignsViewController: UIViewController {
+class RegisterAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xJV-kQ-VyW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xJV-kQ-VyW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="1471" y="591"/>
         </scene>
-        <!--Designs View Controller-->
+        <!--Design View Controller-->
         <scene sceneID="4DW-E1-WrJ">
             <objects>
-                <viewController storyboardIdentifier="DesignsViewController" id="BhG-Rm-Gwc" customClass="DesignsViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DesignsViewController" id="BhG-Rm-Gwc" customClass="DesignViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xFM-jK-NxF"/>
                         <viewControllerLayoutGuide type="bottom" id="MEb-lD-fi6"/>
@@ -156,14 +156,23 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="TjT-hr-3CZ" firstAttribute="centerY" secondItem="Y6E-du-EN0" secondAttribute="centerY" id="SZA-x2-HRS"/>
-                            <constraint firstItem="TjT-hr-3CZ" firstAttribute="centerX" secondItem="Y6E-du-EN0" secondAttribute="centerX" id="iTi-74-fzu"/>
-                            <constraint firstItem="TjT-hr-3CZ" firstAttribute="top" secondItem="xFM-jK-NxF" secondAttribute="bottom" constant="100" id="mWL-gZ-p4y"/>
-                            <constraint firstItem="TjT-hr-3CZ" firstAttribute="leading" secondItem="Y6E-du-EN0" secondAttribute="leadingMargin" constant="10" id="xUd-hC-zBS"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wv3-mu-gjl"/>
+                    <navigationItem key="navigationItem" id="wv3-mu-gjl">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" id="ypj-JT-6VR">
+                            <rect key="frame" x="65" y="6.5" width="245" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Favourite Designs"/>
+                                <segment title="Browse Designs"/>
+                            </segments>
+                            <color key="tintColor" red="0.84682041409999997" green="0.14212366940000001" blue="0.47555834050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="SegmentedControl" destination="ypj-JT-6VR" id="Kgj-uE-Rom"/>
+                        <outlet property="segmentedControl" destination="ypj-JT-6VR" id="hFg-6M-XRY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YQn-4I-ale" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -566,7 +575,6 @@
     </scenes>
     <resources>
         <image name="Banner" width="166" height="48"/>
-        <image name="DesignsIcon" width="512" height="512"/>
         <image name="PlansIcon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>

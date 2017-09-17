@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */; };
 		1801597E1F4DAADB000A3DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1801597D1F4DAADB000A3DA6 /* Assets.xcassets */; };
-		180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */; };
 		180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180159831F4DB54E000A3DA6 /* PlansViewController.swift */; };
 		1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811683A1F4BE65700CB2D05 /* AppDelegate.swift */; };
 		181168441F4BE65700CB2D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181168421F4BE65700CB2D05 /* Main.storyboard */; };
@@ -33,6 +32,11 @@
 		1898ACC61F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACC51F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift */; };
 		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 		1B7362B79A906898D571CE98 /* Pods_Playground_Ideas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */; };
+		D9135F7B1F6BDA6800258AC7 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9135F791F6BDA6800258AC7 /* RegisterAccountViewController.swift */; };
+		D9135F7C1F6BDA6800258AC7 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9135F7A1F6BDA6800258AC7 /* UserSettingViewController.swift */; };
+		FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */; };
+		FD00D0CA1F6D4B8900DD9BE7 /* DesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00D0C91F6D4B8900DD9BE7 /* DesignViewController.m */; };
+		FD508A6A1F691625002D4518 /* DesignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD508A691F691625002D4518 /* DesignTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +66,6 @@
 /* Begin PBXFileReference section */
 		1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1801597D1F4DAADB000A3DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignsViewController.swift; sourceTree = "<group>"; };
 		180159831F4DB54E000A3DA6 /* PlansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playground Ideas-Bridging-Header.h"; sourceTree = "<group>"; };
 		181168371F4BE65700CB2D05 /* Playground Ideas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playground Ideas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,14 @@
 		195D59B8FF11DAFC0E726CC4 /* Pods-Playground Ideas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.release.xcconfig"; sourceTree = "<group>"; };
 		1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground_Ideas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB476B47FCB47F787264D1E /* Pods-Playground Ideas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.debug.xcconfig"; sourceTree = "<group>"; };
+		D9135F791F6BDA6800258AC7 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
+		D9135F7A1F6BDA6800258AC7 /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
+		FD00D0C21F6A905B00DD9BE7 /* DesignDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignDetailViewController.h; sourceTree = "<group>"; };
+		FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignDetailViewController.m; sourceTree = "<group>"; };
+		FD00D0C81F6D4B8900DD9BE7 /* DesignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignViewController.h; sourceTree = "<group>"; };
+		FD00D0C91F6D4B8900DD9BE7 /* DesignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignViewController.m; sourceTree = "<group>"; };
+		FD508A681F691625002D4518 /* DesignTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesignTableViewCell.h; sourceTree = "<group>"; };
+		FD508A691F691625002D4518 /* DesignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesignTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +127,12 @@
 		1801598C1F4DBA3B000A3DA6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D9135F791F6BDA6800258AC7 /* RegisterAccountViewController.swift */,
+				D9135F7A1F6BDA6800258AC7 /* UserSettingViewController.swift */,
+				FD508A671F6900A0002D4518 /* Design */,
 				18213EEF1F6417680058BD0F /* Handbook */,
 				1801597B1F4DA4C4000A3DA6 /* LoginViewController.swift */,
 				18119A341F6AB7FD00C0D395 /* LogoutViewController.swift */,
-				180159811F4DB0D5000A3DA6 /* DesignsViewController.swift */,
 				180159831F4DB54E000A3DA6 /* PlansViewController.swift */,
 				181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */,
 			);
@@ -244,6 +257,19 @@
 				1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD508A671F6900A0002D4518 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				FD508A681F691625002D4518 /* DesignTableViewCell.h */,
+				FD508A691F691625002D4518 /* DesignTableViewCell.m */,
+				FD00D0C21F6A905B00DD9BE7 /* DesignDetailViewController.h */,
+				FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */,
+				FD00D0C81F6D4B8900DD9BE7 /* DesignViewController.h */,
+				FD00D0C91F6D4B8900DD9BE7 /* DesignViewController.m */,
+			);
+			name = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,11 +399,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,7 +427,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AECCEF734EDF574343F05BFF /* [CP] Copy Pods Resources */ = {
@@ -434,11 +462,14 @@
 				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
 				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
+				FD00D0CA1F6D4B8900DD9BE7 /* DesignViewController.m in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
 				18119A2D1F6AB65600C0D395 /* UserInfo.swift in Sources */,
 				18119A311F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift in Sources */,
 				18119A351F6AB7FD00C0D395 /* LogoutViewController.swift in Sources */,
 				181E6ACB1F61A94500C7BFEF /* CommonNavigationController.swift in Sources */,
+				FD508A6A1F691625002D4518 /* DesignTableViewCell.m in Sources */,
+				FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
