@@ -1,4 +1,4 @@
-//
+;//
 //  DesignTableViewCell.h
 //  Playground Ideas
 //
@@ -18,7 +18,6 @@
     
 }
 
-- (void)setData:(NSString *)imageStr1
-      setImage2:(NSString *)imageStr2;
-
+- (void)setData:(NSDictionary *)dictionary1
+    dictionary2:(NSDictionary *)dictionary2;
 @end

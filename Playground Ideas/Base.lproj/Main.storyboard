@@ -142,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="1471" y="591"/>
         </scene>
-        <!--Designs View Controller-->
+        <!--Design View Controller-->
         <scene sceneID="4DW-E1-WrJ">
             <objects>
-                <viewController storyboardIdentifier="DesignsViewController" id="BhG-Rm-Gwc" customClass="DesignsViewController" customModule="Playground_Ideas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DesignsViewController" id="BhG-Rm-Gwc" customClass="DesignViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xFM-jK-NxF"/>
                         <viewControllerLayoutGuide type="bottom" id="MEb-lD-fi6"/>
@@ -168,6 +168,7 @@
                         </segmentedControl>
                     </navigationItem>
                     <connections>
+                        <outlet property="SegmentedControl" destination="ypj-JT-6VR" id="Kgj-uE-Rom"/>
                         <outlet property="segmentedControl" destination="ypj-JT-6VR" id="hFg-6M-XRY"/>
                     </connections>
                 </viewController>

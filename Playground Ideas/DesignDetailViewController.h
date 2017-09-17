@@ -10,4 +10,6 @@
 
 @interface DesignDetailViewController : UIViewController
 
+@property NSString *pdfURL;
+
 @end
