@@ -45,6 +45,25 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addToFavourite:) name:@"addToFavourite" object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeFavourite) name:@"removeFavourite" object:nil];
+    
+}
+
+- (void)removeFavourite {
+    NSDictionary *dataDicTest = @{@"title":@"DesignTitle",
+                                  @"isFavorite":@"NO",
+                                  @"pdfURL":@"https://playgroundideas.org/wp-content/uploads/design_step/Scoop%20and%20Shaft.PlaygroundIdeas.pdf",
+                                  @"picURL":@"http://ww1.prweb.com/prfiles/2012/09/05/9871481/gI_115718_2.jpg"};
+    for (int i =0; i<_dataArr.count; i++) {
+        if ([[_dataArr[i] objectForKey:@"isFavorite"] isEqualToString:@"YES"]){
+            [_dataArr removeObjectAtIndex:i];
+            [_dataArr addObject:dataDicTest];
+            _SegmentedControl.selectedSegmentIndex = 0;
+            [self segmentValueChanged:_SegmentedControl];
+
+            return;
+        }
+    }
 }
 
 - (void)addToFavourite:(NSNotification *)notification {
@@ -88,6 +107,14 @@
 }
 
 - (void)addFavourite {
+    NSDictionary *dataDicTest = @{@"title":@"DesignTitle",
+                                  @"isFavorite":@"YES",
+                                  @"pdfURL":@"https://playgroundideas.org/wp-content/uploads/design_step/Scoop%20and%20Shaft.PlaygroundIdeas.pdf",
+                                  @"picURL":@"http://ww1.prweb.com/prfiles/2012/09/05/9871481/gI_115718_2.jpg"};
+    [_dataArr removeObjectAtIndex:0];
+    [_dataArr addObject:dataDicTest];
+    _SegmentedControl.selectedSegmentIndex = 1;
+    [self segmentValueChanged:_SegmentedControl];
     [popView removeFromSuperview];
     
 }

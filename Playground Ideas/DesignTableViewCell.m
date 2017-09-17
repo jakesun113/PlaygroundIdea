@@ -76,6 +76,8 @@
 
 - (void)setData:(NSDictionary *)dictionary1
     dictionary2:(NSDictionary *)dictionary2 {
+    imageView1.hidden = NO;
+    imageView2.hidden = NO;
     if ([dictionary2 objectForKey:@"title"] == nil){
         imageView2.hidden = YES;
     }
@@ -118,7 +120,14 @@
 }
 
 - (void)addAction {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"addToFavourite" object:self userInfo:nil];
+    if ([btn1.currentTitle isEqualToString:@"+Add to favorite"]) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"addToFavourite" object:self userInfo:nil];
+        
+    }
+    else {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"removeFavourite" object:self userInfo:nil];
+    }
+    
 }
 
 - (void)handleSingleTap:(UIGestureRecognizer *)gestureRecognizer {
