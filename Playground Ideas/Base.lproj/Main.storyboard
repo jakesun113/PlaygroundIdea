@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xJV-kQ-VyW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xJV-kQ-VyW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -151,8 +151,9 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DesignsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="TjT-hr-3CZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DesignsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="TjT-hr-3CZ">
                                 <rect key="frame" x="26" y="100" width="322" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -261,7 +262,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="178"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wfR-0T-ELK" id="kH1-yZ-OxD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="177.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lg9-9y-YLU" userLabel="ClosedView">
@@ -364,7 +365,7 @@
                                                             <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KJl-F7-DSG" id="JLu-cQ-URv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="chapter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhI-HM-Acd">
@@ -575,6 +576,7 @@
     </scenes>
     <resources>
         <image name="Banner" width="166" height="48"/>
+        <image name="DesignsIcon" width="512" height="512"/>
         <image name="PlansIcon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
