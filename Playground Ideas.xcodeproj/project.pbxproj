@@ -20,6 +20,7 @@
 		18119A331F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119A301F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift */; };
 		18119A351F6AB7FD00C0D395 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18119A341F6AB7FD00C0D395 /* LogoutViewController.swift */; };
 		181E6ACB1F61A94500C7BFEF /* CommonNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */; };
+		182A1D301F6AD61E00F26FD9 /* ExpandableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A1D2F1F6AD61E00F26FD9 /* ExpandableTableViewCell.swift */; };
 		182D846F1F6056E300006D0C /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D846E1F6056E300006D0C /* HTTPMethods.swift */; };
 		182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D84731F61606C00006D0C /* HTTPResponseHandler.swift */; };
 		184190F51F58598F0020AFBE /* PlaygroundIdeasAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 184190E51F58598E0020AFBE /* PlaygroundIdeasAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,9 @@
 		184190F91F58598F0020AFBE /* PlaygroundIdeasAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		184191041F585A670020AFBE /* PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191031F585A670020AFBE /* PlaygroundIdeas.swift */; };
 		184191061F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */; };
+		1898ACC11F6E62460067D698 /* ChapterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACC01F6E62460067D698 /* ChapterTableViewController.swift */; };
+		1898ACC31F6E67B30067D698 /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACC21F6E67B30067D698 /* ChapterTableViewCell.swift */; };
+		1898ACC61F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACC51F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift */; };
 		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 		1B7362B79A906898D571CE98 /* Pods_Playground_Ideas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +76,7 @@
 		18119A301F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineHandbooksTableViewController.swift; sourceTree = "<group>"; };
 		18119A341F6AB7FD00C0D395 /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		181E6ACA1F61A94500C7BFEF /* CommonNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonNavigationController.swift; sourceTree = "<group>"; };
+		182A1D2F1F6AD61E00F26FD9 /* ExpandableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableTableViewCell.swift; sourceTree = "<group>"; };
 		182D846E1F6056E300006D0C /* HTTPMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		182D84731F61606C00006D0C /* HTTPResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseHandler.swift; sourceTree = "<group>"; };
 		184190E31F58598E0020AFBE /* PlaygroundIdeasAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlaygroundIdeasAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +84,9 @@
 		184190E61F58598E0020AFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184191031F585A670020AFBE /* PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundIdeas.swift; sourceTree = "<group>"; };
 		184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Authentication+PlaygroundIdeas.swift"; sourceTree = "<group>"; };
+		1898ACC01F6E62460067D698 /* ChapterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewController.swift; sourceTree = "<group>"; };
+		1898ACC21F6E67B30067D698 /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
+		1898ACC51F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Handbook+PlaygroundIdeas.swift"; sourceTree = "<group>"; };
 		18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+UIViewController.swift"; sourceTree = "<group>"; };
 		195D59B8FF11DAFC0E726CC4 /* Pods-Playground Ideas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.release.xcconfig"; sourceTree = "<group>"; };
 		1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground_Ideas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,9 +173,11 @@
 		18213EEF1F6417680058BD0F /* Handbook */ = {
 			isa = PBXGroup;
 			children = (
+				1898ACC41F6E9D600067D698 /* Cell */,
 				18119A2F1F6AB74D00C0D395 /* HandbooksViewController.swift */,
 				18119A301F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift */,
 				18119A2E1F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift */,
+				1898ACC01F6E62460067D698 /* ChapterTableViewController.swift */,
 			);
 			name = Handbook;
 			sourceTree = "<group>";
@@ -187,9 +197,19 @@
 				184190E61F58598E0020AFBE /* Info.plist */,
 				184191031F585A670020AFBE /* PlaygroundIdeas.swift */,
 				182D846E1F6056E300006D0C /* HTTPMethods.swift */,
+				1898ACC51F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift */,
 				184191051F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift */,
 			);
 			path = PlaygroundIdeasAPI;
+			sourceTree = "<group>";
+		};
+		1898ACC41F6E9D600067D698 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1898ACC21F6E67B30067D698 /* ChapterTableViewCell.swift */,
+				182A1D2F1F6AD61E00F26FD9 /* ExpandableTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		18BDAB341F61756A002FD7F2 /* View */ = {
@@ -406,8 +426,11 @@
 			files = (
 				18119A321F6AB74D00C0D395 /* HandbooksViewController.swift in Sources */,
 				182D84741F61606C00006D0C /* HTTPResponseHandler.swift in Sources */,
+				1898ACC31F6E67B30067D698 /* ChapterTableViewCell.swift in Sources */,
 				18119A331F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift in Sources */,
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
+				1898ACC11F6E62460067D698 /* ChapterTableViewController.swift in Sources */,
+				182A1D301F6AD61E00F26FD9 /* ExpandableTableViewCell.swift in Sources */,
 				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
 				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
@@ -424,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184191041F585A670020AFBE /* PlaygroundIdeas.swift in Sources */,
+				1898ACC61F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift in Sources */,
 				184191061F585CDC0020AFBE /* Authentication+PlaygroundIdeas.swift in Sources */,
 				182D846F1F6056E300006D0C /* HTTPMethods.swift in Sources */,
 			);

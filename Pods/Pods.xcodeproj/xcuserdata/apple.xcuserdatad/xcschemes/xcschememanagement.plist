@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ExpandableCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0B080DDB786E657BC48320E4096038D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8170678D508004DD6D94C94669470A90</key>
+		<key>75646BE0820B9109A7AC05B732E5F98C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>998A22806FFD68D41F8DC378C9BFDF48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DBA6001481CEA0EBA031CC5C94508FAA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F62B34D0CEDCD57A7CF460369736B701</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -5,4 +5,5 @@ target 'Playground Ideas' do
   pod 'AFNetworking'
   pod 'MBProgressHUD'
   pod 'SwiftyJSON'
+  pod 'ExpandableCell'
 end

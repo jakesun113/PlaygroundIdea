@@ -48,7 +48,6 @@ class HandbooksViewController: UIViewController {
         }
         currentViewController?.view.removeFromSuperview()
         self.view.insertSubview((targetViewController?.view)!, at: 0);
-        
         currentViewController    = targetViewController;
     }
     
