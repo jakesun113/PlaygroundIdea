@@ -14,13 +14,13 @@ class OnlineHandbooksTableViewController: UITableViewController {
     var expandedData = [false,false,false,false,false]
     var rowHeightData : [CGFloat] = Array(repeating: 50.0, count: 5)
     
-    var books = ["1","2","3","4","5"]
-    var chapters = ["1":["fuck","suck","dick","bitch","lol"],
-                 "2":["fuck2","suck2","dick2","bitch","lol"],
-                 "3":["fuck3","suck3","dick3","bitch","lol"],
-                 "4":["fuck4","suck4","dick4","bitch","lol"],
-                 "5":["fuck5","suck5","dick5","bitch","lol"],
+    var books = ["starter_kit","safety_manual","playground_builders_handbook"]
+    var chapters = ["starter_kit":["chapter1","chapter2","chapter3","chapter4","chapter5"],
+                    "safety_manual":["chapter1","chapter2","chapter3","chapter4","chapter5"],
+                    "playground_builders_handbook":["chapter1","chapter2","chapter3","chapter4","chapter5"],
                  ]
+    
+    var urls : [URL] = []
     
     var isInitiated = false
     
@@ -28,11 +28,25 @@ class OnlineHandbooksTableViewController: UITableViewController {
         super.viewDidLoad()
         
         if !isInitiated {
-            
+            for book in books {
+                if let pdf = Bundle.main.url(forResource: book, withExtension: "pdf", subdirectory: nil, localization: nil)  {
+                    urls.append(pdf)
+//                    let req = URLRequest(url: pdf)
+//                    let webView = UIWebView()
+//                    webView.loadRequest(req)
+                }
+            }
         }
+        
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let contactDetailVC = segue.destinationViewController as? ContactDetailViewController, segue.identifier == "contactDetailSegue",
+//            let selectedIndex = collectionView.indexPathsForSelectedItems()?.first {
+//            
+//            contactDetailVC.contact = contacts[selectedIndex.row]
+//        }
+    }
     
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +55,7 @@ class OnlineHandbooksTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

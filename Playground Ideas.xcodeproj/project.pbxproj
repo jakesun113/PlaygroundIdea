@@ -30,10 +30,12 @@
 		1898ACC11F6E62460067D698 /* ChapterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACC01F6E62460067D698 /* ChapterTableViewController.swift */; };
 		1898ACC31F6E67B30067D698 /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACC21F6E67B30067D698 /* ChapterTableViewCell.swift */; };
 		1898ACC61F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACC51F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift */; };
+		1898ACC91F6EBAC70067D698 /* playground_builders_handbook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1898ACC81F6EBAC70067D698 /* playground_builders_handbook.pdf */; };
+		1898ACCB1F6EBACF0067D698 /* safety_manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1898ACCA1F6EBACF0067D698 /* safety_manual.pdf */; };
+		1898ACCD1F6EBAD60067D698 /* starter_kit.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1898ACCC1F6EBAD60067D698 /* starter_kit.pdf */; };
+		1898ACCF1F6EC6D50067D698 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898ACCE1F6EC6D50067D698 /* PDFViewController.swift */; };
 		18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */; };
 		1B7362B79A906898D571CE98 /* Pods_Playground_Ideas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */; };
-		D9135F7B1F6BDA6800258AC7 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9135F791F6BDA6800258AC7 /* RegisterAccountViewController.swift */; };
-		D9135F7C1F6BDA6800258AC7 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9135F7A1F6BDA6800258AC7 /* UserSettingViewController.swift */; };
 		FD00D0C41F6A905B00DD9BE7 /* DesignDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00D0C31F6A905B00DD9BE7 /* DesignDetailViewController.m */; };
 		FD00D0CA1F6D4B8900DD9BE7 /* DesignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD00D0C91F6D4B8900DD9BE7 /* DesignViewController.m */; };
 		FD508A6A1F691625002D4518 /* DesignTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD508A691F691625002D4518 /* DesignTableViewCell.m */; };
@@ -90,6 +92,10 @@
 		1898ACC01F6E62460067D698 /* ChapterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewController.swift; sourceTree = "<group>"; };
 		1898ACC21F6E67B30067D698 /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
 		1898ACC51F6EB4230067D698 /* Handbook+PlaygroundIdeas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Handbook+PlaygroundIdeas.swift"; sourceTree = "<group>"; };
+		1898ACC81F6EBAC70067D698 /* playground_builders_handbook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = playground_builders_handbook.pdf; sourceTree = "<group>"; };
+		1898ACCA1F6EBACF0067D698 /* safety_manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = safety_manual.pdf; sourceTree = "<group>"; };
+		1898ACCC1F6EBAD60067D698 /* starter_kit.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = starter_kit.pdf; sourceTree = "<group>"; };
+		1898ACCE1F6EC6D50067D698 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		18ED30891F57E7E200E7E9E7 /* Alert+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+UIViewController.swift"; sourceTree = "<group>"; };
 		195D59B8FF11DAFC0E726CC4 /* Pods-Playground Ideas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Playground Ideas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Playground Ideas/Pods-Playground Ideas.release.xcconfig"; sourceTree = "<group>"; };
 		1E817C7AC052B01774555B90 /* Pods_Playground_Ideas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Playground_Ideas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +168,7 @@
 		181168391F4BE65700CB2D05 /* Playground Ideas */ = {
 			isa = PBXGroup;
 			children = (
+				1898ACC71F6EBAAF0067D698 /* Handbooks */,
 				180159851F4DB7CE000A3DA6 /* Playground Ideas-Bridging-Header.h */,
 				1811683A1F4BE65700CB2D05 /* AppDelegate.swift */,
 				18119A2B1F6AB63700C0D395 /* Model */,
@@ -188,6 +195,7 @@
 			children = (
 				1898ACC41F6E9D600067D698 /* Cell */,
 				18119A2F1F6AB74D00C0D395 /* HandbooksViewController.swift */,
+				1898ACCE1F6EC6D50067D698 /* PDFViewController.swift */,
 				18119A301F6AB74D00C0D395 /* OnlineHandbooksTableViewController.swift */,
 				18119A2E1F6AB74D00C0D395 /* DownloadHandbooksTableViewController.swift */,
 				1898ACC01F6E62460067D698 /* ChapterTableViewController.swift */,
@@ -223,6 +231,16 @@
 				182A1D2F1F6AD61E00F26FD9 /* ExpandableTableViewCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		1898ACC71F6EBAAF0067D698 /* Handbooks */ = {
+			isa = PBXGroup;
+			children = (
+				1898ACCC1F6EBAD60067D698 /* starter_kit.pdf */,
+				1898ACCA1F6EBACF0067D698 /* safety_manual.pdf */,
+				1898ACC81F6EBAC70067D698 /* playground_builders_handbook.pdf */,
+			);
+			name = Handbooks;
 			sourceTree = "<group>";
 		};
 		18BDAB341F61756A002FD7F2 /* View */ = {
@@ -375,8 +393,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				181168491F4BE65700CB2D05 /* LaunchScreen.storyboard in Resources */,
+				1898ACCB1F6EBACF0067D698 /* safety_manual.pdf in Resources */,
 				1801597E1F4DAADB000A3DA6 /* Assets.xcassets in Resources */,
+				1898ACCD1F6EBAD60067D698 /* starter_kit.pdf in Resources */,
 				181168441F4BE65700CB2D05 /* Main.storyboard in Resources */,
+				1898ACC91F6EBAC70067D698 /* playground_builders_handbook.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,9 +480,9 @@
 				1801597C1F4DA4C4000A3DA6 /* LoginViewController.swift in Sources */,
 				1898ACC11F6E62460067D698 /* ChapterTableViewController.swift in Sources */,
 				182A1D301F6AD61E00F26FD9 /* ExpandableTableViewCell.swift in Sources */,
-				180159821F4DB0D5000A3DA6 /* DesignsViewController.swift in Sources */,
 				180159841F4DB54E000A3DA6 /* PlansViewController.swift in Sources */,
 				18ED308A1F57E7E200E7E9E7 /* Alert+UIViewController.swift in Sources */,
+				1898ACCF1F6EC6D50067D698 /* PDFViewController.swift in Sources */,
 				FD00D0CA1F6D4B8900DD9BE7 /* DesignViewController.m in Sources */,
 				1811683B1F4BE65700CB2D05 /* AppDelegate.swift in Sources */,
 				18119A2D1F6AB65600C0D395 /* UserInfo.swift in Sources */,

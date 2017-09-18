@@ -61,13 +61,19 @@ class ChapterTableViewController: UITableViewController {
         // Configure the cell...
         cell.chapter = chapters[indexPath.row]
         if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor.gray
+            cell.backgroundColor = UIColor(red: 0.847, green: 0.142, blue: 0.476, alpha: 0.05)
+            cell.chapterLabel.textColor = UIColor(red: 0.847, green: 0.142, blue: 0.476, alpha: 0.8)
         }else {
             cell.backgroundColor = UIColor.white
+            cell.chapterLabel.textColor = UIColor(red: 0.847, green: 0.142, blue: 0.476, alpha: 0.8)
         }
         return cell
     }
  
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
